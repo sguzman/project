@@ -1,3 +1,6 @@
 [submodule "db"]
 	path = db
 	url = http://github.com/sguzman/db
+[submodule "channel-stats"]
+	path = channel-stats
+	url = http://github.com/sguzman/channel-stats
