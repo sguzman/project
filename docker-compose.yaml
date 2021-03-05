@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  db:
+    environment:
+      POSTGRES_USERNAME: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: youtube
+    build:
+      context: ./db
+    image: guzmansalv/postgres_youtube
+    ports:
+      - 5432:5432
+    hostname: db
+    networks:
+      - db_net
+networks:
+  db_net:
